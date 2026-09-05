@@ -53,7 +53,7 @@ trend can be read alongside the formal test.
 python3 -m venv .venv && source .venv/bin/activate
 pip install numpy pandas matplotlib statsmodels yfinance
 
-python3 "ADF Test"
+python3 adf_test.py
 ```
 
 Output is the ADF statistic, the p-value, and a one-line stationary /
@@ -62,7 +62,7 @@ non-stationary verdict, plus an interactive price chart.
 ## Repo structure
 
 ```
-ADF Test    yfinance download -> price plot -> adfuller unit root test (Python; no .py extension)
+adf_test.py    yfinance download -> price plot -> adfuller unit root test
 ```
 
 ## Known caveats
